@@ -1,2 +1,3 @@
 *.sublime*
 bot-cfg.json
+node_modules/
