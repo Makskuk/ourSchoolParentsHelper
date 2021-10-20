@@ -2,7 +2,7 @@
   "name": "our-school-parents-helper",
   "version": "1.0.0",
   "description": "telegram bot for school automation",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Makskuk/ourSchoolParentsHelper#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.54.0"
+    "node-telegram-bot-api": "^0.54.0",
+    "sqlite3": "^5.0.2"
   }
 }
