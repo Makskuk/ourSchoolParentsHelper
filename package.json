@@ -1,0 +1,27 @@
+{
+  "name": "our-school-parents-helper",
+  "version": "1.0.0",
+  "description": "telegram bot for school automation",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makskuk/ourSchoolParentsHelper.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "nodejs"
+  ],
+  "author": "makskuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Makskuk/ourSchoolParentsHelper/issues"
+  },
+  "homepage": "https://github.com/Makskuk/ourSchoolParentsHelper#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.54.0"
+  }
+}
