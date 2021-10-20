@@ -16,14 +16,15 @@ app.init('bot-cfg.json', function(err){
     app.bot().onText(/\/start/, (msg) => {
         app.bot().sendMessage(msg.chat.id, "Hello, "+msg.from.first_name+"!");
     })
+    
+    app.bot().on('message', (msg) => {
+    	if (!msg.text.startsWith('/')) {
+            app.bot().sendMessage(msg.chat.id, "message from "+msg.from.first_name+": "+msg.text);
+            return;
+        }
+    });
 });
 
-app.bot().on('message', (msg) => {
-	if (!msg.text.startsWith('/')) {
-        app.bot().sendMessage(msg.chat.id, "message from "+msg.from.first_name+": "+msg.text);
-        return;
-    }
-});
 
 
 process.on('SIGINT', app.close);

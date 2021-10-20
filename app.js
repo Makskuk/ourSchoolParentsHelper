@@ -24,7 +24,7 @@ exports.init = function(cfgFile, callback) {
             if (!!err) {
                 callback(err.message);
             }
-            console.log("connected to DB "+app.cfg.db);
+            console.log("connected to SQLite3 DB "+app.cfg.db);
         });
     }
 
